@@ -105,10 +105,12 @@ const ImageCarousel = () => {
     
     // Adjust dimensions for mobile
     if (mobile) {
+      // Smaller cards for mobile devices
       cardWidth.current = Math.min(150, window.innerWidth * 0.4);
       cardHeight.current = Math.min(225, window.innerHeight * 0.3);
       gap.current = 20;
     } else {
+      // Default sizes for desktop
       cardWidth.current = 200;
       cardHeight.current = 300;
       gap.current = 40;
